@@ -12,7 +12,7 @@ public:
     // Constructor
     Student(int roll, int cls, double gpa)
     {
-        // NOTE: In constructor, when element name and object element name are the same, at that time we use this and arrow    sign to clear the confusion about which one is for which elements.
+        // NOTE: In constructor, when element name and object element name are the same, at that time we use this and arrow         sign to clear the confusion about which one is for which elements.
         // Here this pointer points the rahim object.
         this->roll = roll;
         // (*this).roll = roll;  // alternative way to use this

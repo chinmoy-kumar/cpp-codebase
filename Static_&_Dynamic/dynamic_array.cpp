@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     // int a[5]; Static array
     int *a = new int[5]; // Dynamic array
+    // Here new return a heap memory location of the first array element which need to be store in a pointer.
     for (int i = 0; i < 5; i++)
     {
         cin >> a[i];

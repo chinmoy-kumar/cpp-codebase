@@ -8,7 +8,7 @@ int main(){
 
     // Dynamic Variable
     // Dynamic variables don't get deleted automatically after return from the function.
-    int *p = new int;
+    int *p = new int; // Here new return a heap memory location which need to be store in a pointer.
     *p = 100;
     cout << *p << endl;
 
