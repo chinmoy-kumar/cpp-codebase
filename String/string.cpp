@@ -2,17 +2,13 @@
 using namespace std;
 
 int main(){
-    char s[100];
-    /*
-    cin >> s; // single word input
-    cout << s << endl;
-    */
+/*
+    string st1 = "Hello World";
+    cout << st1 << endl;
+*/
 
-    // To take input with space we use getline fuction
-    // cin.getline(variable_name, size) 
-
-    cin.getline(s, 100);
-    cout << s << endl;
-
+    string st; // string is a data type in C++
+    cin >> st; // works for without space words only
+    cout << st << endl;
     return 0;
 }

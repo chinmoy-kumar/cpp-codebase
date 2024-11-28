@@ -2,25 +2,25 @@
 #include <iostream>
 using namespace std;
 
-class Student
+class Student // Here Student is the class name
 {
-public:
+public: // a type of access modifier
     char name[100];
     int roll;
     float cgpa;
 };
 
-int main()
+int main() 
 {
-    Student a;
-    a.roll = 23;
-    a.cgpa = 3.7;
+    Student p; // Here a is the object name
+    p.roll = 23; // roll, cgpa these are the elements of p object
+    p.cgpa = 3.7;
 
     // way of char array data initialization
     char temp[100] = "Sakib";
-    strcpy(a.name, temp);
+    strcpy(p.name, temp);
 
-    cout << a.name << " " << a.roll << " " << a.cgpa << " " << endl;
+    cout << p.name << " " << p.roll << " " << p.cgpa << " " << endl;
 
     return 0;
 }
