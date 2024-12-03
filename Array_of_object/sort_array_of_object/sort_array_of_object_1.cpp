@@ -9,13 +9,29 @@ class Student{
     int marks;
 };
 
-bool cmp(Student l, Student r){
-    if(l.marks < r.marks){
+/*
+bool cmp(Student l, Student r){ 
+    if(l.marks < r.marks){ // ascending order
+    // if(l.marks <= r.marks)  // if there is any equal numbers 
+    // if(l.marks > r.marks)  // descending order
+    // if(l.marks >= r.marks)  // if there is any equal numbers 
         return true;
     }
     else{
         return false;
     }
+
+    // shortcut way:
+    //----------------
+    return l.marks <= r.marks;
+}
+*/
+
+// shortcut way:
+//----------------
+bool cmp(Student l, Student r){
+
+    return l.marks <= r.marks;
 }
 
 int main(){
@@ -41,17 +57,17 @@ int main(){
         6
         sakib 16 89
         rakib 25 98
-        akib 12 53
-        sifat 14 28
+        akib 12 85
+        sifat 14 24
         rifat 13 66
-        ifat 39 86
+        ifat 39 85
 */
 
 /* sample output
-        sifat 14 28
-        akib 12 53
+        sifat 14 24
         rifat 13 66
-        ifat 39 86
+        ifat 39 85
+        akib 12 85
         sakib 16 89
         rakib 25 98
 */
